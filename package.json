@@ -1,10 +1,10 @@
 {
-  "name": "smog",
+  "name": "smog2",
   "description": "HTML5/Node/WebSocket MongoDB viewer",
-  "version": "0.1.6",
-  "homepage": "http://github.com/wearefractal/smog",
-  "repository": "git://github.com/wearefractal/smog.git",
-  "author": "Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
+  "version": "2.0.0",
+  "homepage": "https://github.com/petschekr/smog2",
+  "repository": "git://github.com/petschekr/smog2.git",
+  "author": "Ryan Petschek <petschekr@gmail.com>",
   "bin": {
     "smog": "./bin/smog"
   },
