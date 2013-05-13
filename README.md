@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td>Node Version</td>
-<td>>= 0.6</td>
+<td>>= 0.6 <em>(I think)</em></td>
 </tr>
 </table>
 
@@ -20,28 +20,14 @@ Install smog by running ```npm install smog -g```
 
 ### Local
 
-smog will run on port 8080 by default (add PORT=X at the front of the command to change this)
+smog will run on port 8080 by default
 
-```
-$ smog
-```
+`$ smog`
 
-### Web Client
+You can make smog listen on a different port by running it with the `-p` switch
 
-Don't want to trouble yourself with installing smog? Visit http://smog.jit.su/ to try it out
+`$ smog -p 1337`
 
-### Desktop UI
-
-Desktop UI is still in testing but you can try it at your own risk. Linux only (for now)
-
-```
-$ smog -u
-```
-
-## Pictures
-
-![Administration](http://i.minus.com/iD9QIHyUZGYEg.png)
-![Editing](http://i.minus.com/i8JPNXYRWrxTk.png)
 
 ## TODO
 
@@ -68,7 +54,11 @@ $ smog -u
 * Graphs
 * Pagination
 
-## LICENSE
+##### GUI
+
+* The smog v1 GUI has been removed in order to be pontentialled replaced by [`node-webkit`](https://github.com/rogerwang/node-webkit "node-webkit")
+
+## License
 
 (MIT License)
 
