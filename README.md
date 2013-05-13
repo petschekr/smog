@@ -56,7 +56,7 @@ You can make smog listen on a different port by running it with the `-p` switch
 
 ##### GUI
 
-* The smog v1 GUI has been removed in order to be pontentialled replaced by [`node-webkit`](https://github.com/rogerwang/node-webkit "node-webkit")
+* The smog v1 GUI has been removed in order to be potentially replaced by [`node-webkit`](https://github.com/rogerwang/node-webkit "node-webkit")
 
 ## License
 
