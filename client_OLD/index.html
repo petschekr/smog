@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Smog</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link href="css/ext/jquery.noty.css" rel="stylesheet" />
+		<link href="css/ext/noty_theme_twitter.css" rel="stylesheet" />
+		<link href="css/ext/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/ext/bootstrap-responsive.min.css" rel="stylesheet" />
+		<link href="css/styles.css" rel="stylesheet" />
+
+		<!-- Libs -->
+		<script src="js/ext/jquery-2.0.0.min.js"></script>
+		<script src="js/ext/jade.js"></script>
+		<script src="js/ext/jquery.noty.js"></script>
+		<script src="js/ext/bootstrap.min.js"></script>
+		<!-- Scripts -->
+		<script>
+			require({
+			  baseUrl: ".",
+			  packages: [
+				 { name: "templates", location: "templates"},
+				 { name: "smog", location: "js" },
+				 { name: "routes", location: "js/routes" },
+				 { name: "ext", location: "js/ext" },
+				 { name: "ace", location: "js/ext/ace"}
+			  ]
+			},[
+			  "smog/smog"
+			]);
+		</script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div id="sidebar" class="span2 row-fluid"></div>
+				<div id="content" class="span10 row-fluid"></div>
+			</div>
+		</div>
+	</body>
+</html>
