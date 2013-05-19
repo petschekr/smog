@@ -622,6 +622,12 @@ blockquote {
   font-style: italic;
 }
 
+a > code {
+  color: #ffcc00 !important;
+}
+a > code:hover {
+  color: #ffeb9b !important;
+}
 code {
   font-family: "Lucida Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color: #efefef;
