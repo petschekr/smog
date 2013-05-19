@@ -12,9 +12,26 @@ if port is NaN
   console.error "Listening port was invalid"
   port = process.env.PORT or 8080
 
-# Web server
+# HTTP server
 app = express()
 app.use express.static join __dirname, "./public/"
+
 server = http.createServer(app).listen port
+# WebSocket server
+WSPort = 8079
+wss = new WSServer port: WSPort
+wss.on "connection", (ws) ->
+	ws.on "open", ->
+		# The WS connection has opened
+		
+	ws.on "message", (message) ->
+		try
+			message = JSON.parse message
+		catch e
+			# Terminate the connection if invalid JSON is passed
+			ws.terminate()
+			return
+	ws.on "close", ->
+		# WS connection was closed
 
 console.log "smog2 started on #{port}"
