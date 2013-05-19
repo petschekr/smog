@@ -8,15 +8,22 @@ WSServer = require("ws").Server
 
 commander.version "2.0.0"
 commander.usage "[options]"
-commander.option "-p, --port <n>", "The port for smog to listen on", parseInt
+commander.option "-p, --port <n>", "The port for smog to listen on (HTTP) (8080)", parseInt
+commander.option "-w, --ws-port <n>", "The port for the WebSocket server to listen on (8079)", parseInt
 commander.parse process.argv
 
 port = commander.port
 if isNaN port
-  console.error "Listening port was invalid"
-  port = process.env.PORT or 8080
+	console.error "HTTP listening port was invalid"
+	port = process.env.PORT or 8080
 if port is undefined
 	port = process.env.PORT or 8080
+WSPort = commander.ws-port
+if isNaN WSPort
+	console.error "WebSocket listening port was invalid"
+	WSPort = 8079
+if WSPort is undefined
+	WSPort = 8079
 
 # HTTP server
 app = express()
