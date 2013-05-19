@@ -820,6 +820,10 @@ section #title .credits.right {
   float: right;
 }
 
+a.muted {
+  color: #7A6200;
+}
+
 @media print, screen and (max-width: 720px) {
   #title .credits {
     display: block;
