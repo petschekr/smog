@@ -279,7 +279,7 @@ q:after {
 }
 
 small {
-  font-size: 75%;
+  font-size: 45%;
 }
 
 /*
@@ -804,7 +804,7 @@ section #title h1 {
   font-weight: normal;
   font-size: 40px;
   text-align: center;
-  line-height: 36px;
+  line-height: 32px;
 }
 section #title p {
   color: #d7cfbe;
