@@ -1,8 +1,8 @@
 {
   "name": "smog2",
-  "description": "HTML5/Node/WebSocket MongoDB viewer",
+  "description": "HTML5/Node/WebSocket MongoDB viewer v2",
   "version": "2.0.0",
-  "homepage": "https://github.com/petschekr/smog2",
+  "homepage": "http://petschekr.github.io/smog2/",
   "repository": "git://github.com/petschekr/smog2.git",
   "author": "Ryan Petschek <petschekr@gmail.com>",
   "bin": {
@@ -10,19 +10,16 @@
   },
   "dependencies": {
     "coffee-script": "*",
-    "mongoskin": "*",
     "express": "*",
-    "vein": "0.5.0",
     "async": "*",
-    "mongo-ton": ">=0.0.2",
-    "ton": ">=0.0.2",
     "uglify-js": "1.x.x",
-    "mongodb": "*"
+    "mongodb": "*",
+    "ws": "*"
   },
   "optionalDependencies": {
     "pane": "*"
   },
-  "devDependenciez": {
+  "devDependencies": {
     "mocha": "*",
     "should": "*",
     "jaded": "*",
@@ -33,12 +30,12 @@
     "start": "start.coffee"
   },
   "engines": {
-    "node": ">= 0.4.0"
+    "node": ">= 0.6.0"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/wearefractal/smog/raw/master/LICENSE"
+      "url": "https://github.com/petschekr/smog2/blob/develop/LICENSE"
     }
   ],
   "subdomain": "smog"
