@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8" />
-      <title>Smog</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<head>
+		<meta charset="utf-8" />
+		<title>Smog</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <link href="css/ext/jquery.noty.css" rel="stylesheet" />
-      <link href="css/ext/noty_theme_twitter.css" rel="stylesheet" />
-      <link href="css/ext/bootstrap.min.css" rel="stylesheet" />
-      <link href="css/ext/bootstrap-responsive.min.css" rel="stylesheet" />
-      <link href="css/styles.css" rel="stylesheet" />
+		<link href="lib/css/jquery.noty.css" rel="stylesheet" />
+		<link href="lib/css/noty_theme_twitter.css" rel="stylesheet" />
+		<link href="lib/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="lib/css/bootstrap-responsive.min.css" rel="stylesheet" />
+		<link href="lib/css/styles.css" rel="stylesheet" />
 
-      <script src="js/ext/require.js"></script>
-      <script src="js/ext/jade.js"></script>
-      <script src="js/ext/vein.js"></script>
-      <script src="js/ext/jquery-2.0.0.min.js"></script>
-      <script src="js/ext/dermis.js"></script>
-      <script src="js/ext/jquery.noty.js"></script>
-      <script src="js/ext/bootstrap.min.js"></script>
-      <script>
-         require({
-           baseUrl: ".",
-           packages: [
-             { name: "templates", location: "templates"},
-             { name: "smog", location: "js" },
-             { name: "routes", location: "js/routes" },
-             { name: "ext", location: "js/ext" },
-             { name: "ace", location: "js/ext/ace"}
-           ]
-         },[
-           "smog/smog"
-         ]);
-      </script>
-   </head>
-   <body>
-      <div class="container-fluid">
-         <div class="row-fluid">
-            <div id="sidebar" class="span2 row-fluid"></div>
-            <div id="content" class="span10 row-fluid"></div>
-         </div>
-      </div>
-   </body>
+		<!-- Libs -->
+		<script src="libs/js/jquery-2.0.0.min.js"></script>
+		<script src="libs/js/jade.min.js"></script>
+		<script src="libs/js/jquery.noty.js"></script>
+		<script src="libs/js/bootstrap.min.js"></script>
+		<!-- CodeMirror -->
+		<script src="libs/codemirror-3.13/lib/codemirror.js"></script>
+		<link href="libs/codemirror-3.13/lib/codemirror.css" rel="stylesheet" />
+		<!-- CodeMirror Themes and Syntax files -->
+		<link src="libs/codemirror-3.13/theme/monokai.css" rel="stylesheet" />
+		<script src="libs/codemirror-3.13/mode/javascript/javascript.js"></script>
+		<!-- Scripts -->
+		<script></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div id="sidebar" class="span2 row-fluid"></div>
+				<div id="content" class="span10 row-fluid"></div>
+			</div>
+		</div>
+	</body>
 </html>
